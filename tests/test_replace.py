@@ -14,4 +14,4 @@ def test_replace_expression_not_match():
 
 
 def test_replace_expression_d20():
-    assert replace_expression("{1 + 1}") == "1 + 1 = 2"
+    assert "(d20) + 1 = " in replace_expression("{<d20> + 1}")
