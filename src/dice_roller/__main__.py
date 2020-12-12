@@ -11,7 +11,7 @@ def make_parser(prog):
         prog=prog,
         description="Simple utility to help keep rule logs from dnd sessions.",
     )
-    parser.add_argument("file", type=argparse.FileType("w"))
+    parser.add_argument("file", type=str)
     parser.add_argument(
         "--version",
         action="version",
